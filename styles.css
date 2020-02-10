@@ -1,23 +1,54 @@
 /* custom css file */
 
+/* main */
 html,body{
     margin:0;
     padding:0;
     overflow:auto;
+    height: 100%;
     width:100%;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Oswald', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
     overflow-x: hidden;
-}
-
-header {
 }
 
 /* background image */
 .bg-img {
-    background-image: url("vacay.jpg");
-    min-height: 950px;
+    background-image: url("img/vacay.jpg");
+    /*min-height: 950px;*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* sdk background image */
+.bg-img-sdk {
+    background-image: url("img/river.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* kk background image */
+.bg-img-kk {
+    background-image: url("img/beach.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* kk background image */
+.bg-img-customT {
+    background-image: url("img/custom.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,6 +75,7 @@ header {
     margin: 0;
 }
 .nav li {
+    font-family: 'Oswald', sans-serif;
     list-style: none;
     display: inline-block;
     margin: 0 15px 0 15px;
@@ -51,12 +83,14 @@ header {
     vertical-align: middle;
 }
 .nav img {
-    width: 200px;
+    width: 160px;
 }
 .nav a {
     color:black;
     font-size: 18px;
 }
+
+/*background wording*/
 .welcome {
     position: absolute;
     padding-top: 400px;
@@ -65,4 +99,52 @@ header {
 .welcome p{
     font-size: 40px;
     font-family: 'Permanent Marker', cursive;
+}
+.main-text p{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sdk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+}
+.sdk p{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Cabin Sketch', cursive;
+    color: brown;
+}
+
+.kk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+.kk p{
+    font-size: 100px;
+    font-family: 'Cabin Sketch', cursive;
+    color: darkblue;
+}
+
+.customT {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.customT p{
+    font-size: 100px;
+    font-family: 'Cabin Sketch', cursive;
+    color: yellow;
 }
