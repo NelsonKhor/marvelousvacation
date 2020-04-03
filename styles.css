@@ -207,8 +207,14 @@ html,body{
 }
 
 .footer p{
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     margin: 0;
+}
+
+.sm-icon {
+    display: inline-block;
+    margin: 5px;
 }
 
 .sdk {
