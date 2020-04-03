@@ -17,7 +17,6 @@ html,body{
 /* background image */
 .bg-img {
     background-image: url("img/vacay.jpg");
-    /*min-height: 950px;*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +96,8 @@ html,body{
     padding-left: 800px;
 }
 .welcome p{
-    font-size: 40px;
+    text-align: center;
+    font-size: 2vw;
     font-family: 'Permanent Marker', cursive;
 }
 .main-text{
@@ -107,6 +107,108 @@ html,body{
 .main-text p{
     font-size: 3.5vh;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-pic1{
+    background-image: url("img/wildlife.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-pic2{
+    background-image: url("img/culture.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-pic3{
+    background-image: url("img/food.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-pic1 p{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 12vw;
+    font-family: 'Permanent Marker', cursive;
+    color: orange;
+    text-shadow: 3px 3px white;
+    margin: 0;
+}
+
+.main-pic2 p{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 12vw;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+    text-shadow: 3px 3px white;
+    margin: 0;
+}
+
+.main-pic3 p{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 12vw;
+    font-family: 'Permanent Marker', cursive;
+    color: darkblue;
+    text-shadow: 3px 3px white;
+    margin: 0;
+}
+
+.side-text{
+    margin-bottom: 80px;
+}
+
+.side-text img{
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+}
+.side-text p{
+    font-size: 3.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.overlay {
+    position: relative;
+    opacity: 0%;
+    transition: .5s ease;
+  }
+
+.side-text:hover .overlay {
+    opacity: 0.5;
+  }
+
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+
+}
+
+.footer p{
+    padding-top: 20px;
+    margin: 0;
 }
 
 .sdk {
