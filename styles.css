@@ -105,9 +105,10 @@ html,body{
     padding-bottom: 50px;
 }
 .main-text p{
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .main-pic1{
     background-image: url("img/wildlife.jpg");
@@ -197,24 +198,44 @@ html,body{
 .footer{
     position: relative;
     left: 0;
+    right: 0;
     bottom: 0;
-    height: 300px;
-    width: 100%;
+    padding: 1rem;
     background-color: red;
     color: white;
     text-align: center;
-
 }
 
 .footer p{
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
     padding-top: 20px;
     margin: 0;
 }
 
-.sm-icon {
+.org-icon{
     display: inline-block;
     margin: 5px;
+}
+
+.org-icon img{
+    height: 100px;
+    width: auto;
+}
+
+.sm-icon {
+    display: inline-block;
+    padding: 5px;
+}
+
+.sm-icon img{
+    width: 50%;
+    height: 50%;
+}
+
+.copyright p{
+    text-align: center;
 }
 
 .sdk {
@@ -237,6 +258,11 @@ html,body{
     .sdk p{
         font-size: 19vw;
     }
+
+    .main-text p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }    
 }
 
 .kk {
