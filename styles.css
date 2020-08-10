@@ -87,10 +87,17 @@ html,body{
     font-family: 'Oswald', sans-serif;
     list-style: none;
     display: inline-block;
-    margin: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
+    background-color: rgba(255, 255, 255, 0.7);
     color: black;
     vertical-align: middle;
 }
+
+/* logo background transparent AKA the fifth on the list */
+.nav li:nth-child(5) {
+    background-color: transparent;
+}
+
 .nav img {
     width: 160px;
 }
@@ -102,13 +109,16 @@ html,body{
 /*background wording*/
 .welcome {
     position: absolute;
-    padding-top: 400px;
-    padding-left: 800px;
+    height: 100vh;
+    width: 100vw;
 }
 .welcome p{
+    position: absolute;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
+    transform: translate(100%, 240%);
     font-family: 'Permanent Marker', cursive;
+    color: #f16022;
 }
 .main-text{
     padding-top: 50px;
@@ -300,6 +310,11 @@ html,body{
 
 /* Scaling for mobile on the text */
 @media screen and (max-width: 800px) {
+    .welcome p{
+        font-size: 20px;
+        transform: translate(20%, 1000%);
+    }
+
     .sdk p{
         font-size: 19vw;
     }
