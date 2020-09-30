@@ -1,6 +1,6 @@
-/* custom css file */
+/* CUSTOM CSS FILE */
 
-/* main */
+/* MAIN CSS */
 html,body{
     margin:0;
     padding:0;
@@ -14,7 +14,10 @@ html,body{
     overflow-x: hidden;
 }
 
-/* background image */
+
+
+/************************* BACKGROUND IMAGES *************************/
+/* main page background image */
 .bg-img {
     background-image: url("img/vacay.jpg");
     height: 100%;
@@ -23,7 +26,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 /* about us background image*/
 .bg-img-about {
     background-image: url("img/mv1.jpg");
@@ -33,7 +35,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 /* sdk background image */
 .bg-img-sdk {
     background-image: url("img/river.jpg");
@@ -43,7 +44,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 /* kk background image */
 .bg-img-kk {
     background-image: url("img/beach.jpg");
@@ -53,8 +53,25 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
-/* kk background image */
+/* semporna background image */
+.bg-img-spn {
+    background-image: url("img/kapalai.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* sukau background image */
+.bg-img-sku {
+    background-image: url("img/sukau1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* custom background image */
 .bg-img-customT {
     background-image: url("img/custom.jpg");
     height: 100%;
@@ -63,8 +80,28 @@ html,body{
     background-size: cover;
     position: relative;
 }
+/* promotion background image */
+.bg-img-promotionT {
+    background-image: url("img/promotion1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* contact background image */
+.bg-img-contactT {
+    background-image: url("img/contactus.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
-/* navigation bar */
+
+
+/************************* NAVIGATION BAR *************************/
 .container-nav {
     width: 100%;
     position: absolute;
@@ -92,12 +129,25 @@ html,body{
     color: black;
     vertical-align: middle;
 }
-
-/* logo background transparent AKA the fifth on the list */
+/* Make the logo background transparent AKA the fifth on the list */
 .nav li:nth-child(5) {
     background-color: transparent;
 }
-
+.nav li:nth-child(8) {
+    background: blue;
+    -webkit-animation: switchColor 2s infinite linear;
+}
+@keyframes switchColor {
+    0% {
+        background: yellow;
+    }
+    50% {
+        background: red;
+    }
+    100% {
+        background: yellow;
+    }
+}
 .nav img {
     width: 160px;
 }
@@ -106,7 +156,9 @@ html,body{
     font-size: 18px;
 }
 
-/*background wording*/
+
+
+/************************* MIAN PAGE BACKGROUND WORDING *************************/
 .welcome {
     position: absolute;
     height: 100vh;
@@ -130,6 +182,8 @@ html,body{
 }
 
 
+
+/************************* MAIN PAGE MID SECTION *************************/
 .main-pic1{
     background-image: url("img/wildlife.jpg");
     height: 50%;
@@ -138,7 +192,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 .main-pic2{
     background-image: url("img/culture.jpg");
     height: 50%;
@@ -147,7 +200,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 .main-pic3{
     background-image: url("img/food.jpg");
     height: 50%;
@@ -156,7 +208,6 @@ html,body{
     background-size: cover;
     position: relative;
 }
-
 .main-pic1 p{
     text-align: center;
     padding-top: 50px;
@@ -167,7 +218,6 @@ html,body{
     text-shadow: 3px 3px white;
     margin: 0;
 }
-
 .main-pic2 p{
     text-align: center;
     padding-top: 50px;
@@ -178,7 +228,6 @@ html,body{
     text-shadow: 3px 3px white;
     margin: 0;
 }
-
 .main-pic3 p{
     text-align: center;
     padding-top: 50px;
@@ -189,6 +238,8 @@ html,body{
     text-shadow: 3px 3px white;
     margin: 0;
 }
+
+/************************* side CSS *************************/
 
 .side-text{
     margin-bottom: 80px;
@@ -216,6 +267,14 @@ html,body{
     text-align: center;
 }
 
+p.promo-text {
+    font-size: 3.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #f16022;
+}
+
+/* reusable - semporna, sukau*/
 .img-sdk {
     height: 416.25px;
     width: 100%;
@@ -232,15 +291,25 @@ html,body{
     margin-bottom: 80px;
 }
 
+/* under promotion */
+.img-promo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
 .overlay {
     position: relative;
-    opacity: 80%;
+    opacity: 1;
     transition: .5s ease;
   }
 
-.side-text:hover .overlay {
-    opacity: 1;
+.col:hover .overlay {
+    opacity: 0.5;
   }
+
 
 /*..........................*/
 .container {
@@ -248,6 +317,9 @@ html,body{
 }
 /*..........................*/
 
+
+
+/************************* FOOTER SECTION *************************/
 .footer{
     position: relative;
     left: 0;
@@ -258,7 +330,6 @@ html,body{
     color: white;
     text-align: center;
 }
-
 .footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -266,49 +337,30 @@ html,body{
     padding-top: 20px;
     margin: 0;
 }
-
 .org-icon{
     display: inline-block;
     margin: 5px;
 }
-
 .org-icon img{
     height: 100px;
     width: auto;
 }
-
 .sm-icon {
     display: inline-block;
     padding: 5px;
 }
-
 .sm-icon img{
     width: 50%;
     height: 50%;
 }
-
 .copyright p{
     text-align: center;
 }
 
-.sdk {
-    position: absolute;
-    top: 46.5%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%,-50%);
-
-}
-.sdk p{
-    text-align: center;
-    font-size: 200px;
-    font-family: 'Cabin Sketch', cursive;
-    color: brown;
-}
 
 
 
-/* Scaling for mobile on the text */
+/************************* Scaling for mobile on the text *************************/
 @media screen and (max-width: 800px) {
     .welcome p{
         font-size: 20px;
@@ -333,6 +385,9 @@ html,body{
     }
 }
 
+
+
+/************************* ABOUT US *************************/
 .about {
     position: absolute;
     top: 50%;
@@ -348,6 +403,27 @@ html,body{
     color: rgba(255, 166, 0, 0.877);
 }
 
+
+
+/************************* SANDAKAN *************************/
+.sdk {
+    position: absolute;
+    top: 46.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+}
+.sdk p{
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Cabin Sketch', cursive;
+    color: brown;
+}
+
+
+
+/************************* KOTA KINABALU *************************/
 .kk {
     position: absolute;
     top: 50%;
@@ -363,6 +439,44 @@ html,body{
     color: darkblue;
 }
 
+
+
+/************************* SEMPORNA *************************/
+.semporna {
+    position: absolute;
+    top: 46.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+}
+.semporna p{
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Cabin Sketch', cursive;
+    color: purple;
+}
+
+
+
+/************************* SUKAU *************************/
+.sukau {
+    position: absolute;
+    top: 46.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+}
+.sukau p{
+    text-align: center;
+    font-size: 200px;
+    font-family: 'Cabin Sketch', cursive;
+    color: cyan;
+}
+
+
+/************************* CUSTOM PAGE *************************/
 .customT {
     position: absolute;
     top: 50%;
@@ -379,3 +493,64 @@ html,body{
     color: yellow;
 }
 
+
+/************************* PROMOTION PAGE *************************/
+.promotionT {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.promotionT p{
+    text-align: center;
+    /*font-size: 100px;*/
+    font-size: 12vw;
+    font-family: 'Cabin Sketch', cursive;
+    color: yellow;
+    -webkit-animation: switchColor2 2s infinite linear;
+}
+@keyframes switchColor2 {
+    0% {
+        color: yellow;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: yellow;
+    }
+}
+
+
+
+/************************* CONTACT US *************************/
+.contactT {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+.contactT p{
+    text-align: center;
+    /*font-size: 100px;*/
+    font-size: 12vw;
+    font-family: 'Cabin Sketch', cursive;
+    color: red;
+}
+
+.field {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+}
+
+.textarea {
+    width: 100%;
+}
