@@ -1,2 +1,2 @@
 Marvelous Vacation Website
-https://marvelous-vacation.com/
+/n https://marvelous-vacation.com/
