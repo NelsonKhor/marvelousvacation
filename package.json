@@ -1,0 +1,12 @@
+{
+  "name": "marvelousvacation",
+  "version": "1.0.0",
+  "description": "Marvelous Vacation Sdn. Bhd. is a travel agency based in Sabah, Malaysia. This is the source code behind their live website.  \r Their landing page can be found at https://marvelous-vacation.com/",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
